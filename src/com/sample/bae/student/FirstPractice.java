@@ -6,7 +6,7 @@ public interface FirstPractice {
 
   void setData(List<String> list);
 
-  Long totalScoreOfMember(String name);
+  Double totalScoreOfMember(String name);
 
   String highestTotalScoreMember();
 

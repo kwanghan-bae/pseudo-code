@@ -1,13 +1,12 @@
 package com.sample.bae.student;
-
-import com.sample.bae.student.kwang.FirstPracticeImplKwang;
+import com.sample.bae.student.hye.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PracticeVerifier {
 
   public static void main(String[] args) {
-    FirstPractice firstPractice = new FirstPracticeImplKwang();
+    FirstPractice firstPractice = new FirstPracticeImpl();
     List<String> data = new ArrayList<>();
     data.add("철수,국어:90,수학:5,영어:100");
     data.add("영수,국어:67,수학:55,영어:92");
@@ -24,7 +23,8 @@ public class PracticeVerifier {
   }
 
   public static void verify(FirstPractice practice) {
-    boolean isPass = practice.totalScoreOfMember("철수") == 195
+    boolean isPass = 
+    practice.totalScoreOfMember("철수") == 195
       && practice.totalScoreOfMember("영수") == 214
       && practice.totalScoreOfMember("순희") == 151
       && practice.totalScoreOfMember("영철") == 149
