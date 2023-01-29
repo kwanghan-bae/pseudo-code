@@ -33,7 +33,7 @@ public class FirstPracticeImplKwang implements FirstPractice {
   }
 
   @Override
-  public Long totalScoreOfMember(String name) {
+  public Double totalScoreOfMember(String name) {
 //    return gradeCards.stream()
 //      .filter(gradeCard -> gradeCard.name.equals(name))
 //      .map(GradeCard::getTotalScore)
@@ -50,7 +50,7 @@ public class FirstPracticeImplKwang implements FirstPractice {
       throw new RuntimeException("잘못된 이름입니다.");
     }
 
-    return targetCard.getTotalScore();
+    return targetCard.getTotalScore().doubleValue();
   }
 
   @Override
